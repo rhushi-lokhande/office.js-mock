@@ -1,3 +1,4 @@
+import { chartItems } from './mock-data';
 
 window['Excel'] = {
     run: (resolve) => {
@@ -12,6 +13,7 @@ window['Office'] = {
         }
     }
 };
+
 window['context']  = {
     sync: () => '',
     workbook: {
@@ -19,6 +21,7 @@ window['context']  = {
             load: () => '',
             getActiveWorksheet: () => {
                 return {
+                    load: () => '',
                     charts: {
                         onActivated: {
                             add: (cb) => {
@@ -27,6 +30,7 @@ window['context']  = {
                                 });
                             }
                         },
+                        items : chartItems
                     }
 
                 };
