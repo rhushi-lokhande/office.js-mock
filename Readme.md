@@ -59,7 +59,8 @@ spec.ts will be look like
 window['values']  is used to configure your test date which will be used by mock to return it.
 
 
-List of Global variable 
+## List of Global variable :
+
 |  Variable  |  use|
 |--|--|
 | window['values'] |  Is for the selected rage values |
