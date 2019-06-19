@@ -16,6 +16,7 @@ window['context']  = {
     sync: () => '',
     workbook: {
         worksheets: {
+            load: () => '',
             getActiveWorksheet: () => {
                 return {
                     charts: {
@@ -25,7 +26,7 @@ window['context']  = {
                                     chartId: window['chartId'] || 'chartId'
                                 });
                             }
-                        }
+                        },
                     }
 
                 };
