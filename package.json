@@ -1,6 +1,6 @@
 {
   "name": "officejs-mock",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "officejs mock for unit testing ",
   "main": "index.js",
   "scripts": {
@@ -12,5 +12,5 @@
     "Mock"
   ],
   "author": "Rhushikesh Lokhande",
-  "license": "ISC",
+  "license": "ISC"
 }
