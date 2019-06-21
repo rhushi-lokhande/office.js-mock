@@ -56,9 +56,10 @@ spec.ts will be look like
             window['values'] = [['cellValue']];
             expect(await app.getSelectedCellValue()).toEqual([['cellValue']]);
     }));
+```
 
 window['values']  is used to configure your test date which will be used by mock to return it.
-```
+
 
 ## List of Global variable :
 
