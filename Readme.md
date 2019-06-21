@@ -18,7 +18,7 @@ also add mime type as follows
 ## Usage
 
 In this package all the function available over office.js is define to support the unit testing as follows 
-
+```javascript
     window['context'] = {
 	    workbook: {
 		    getSelectedRange : () => {
@@ -30,12 +30,12 @@ In this package all the function available over office.js is define to support t
 		    }
 	    }
     };
-
+```
 in which the referencing data has been returned from the window object which help to configure the data while writing test cases 
 
 Ex.
 consider we are writing test case for the function which return the selected cell value 
-
+```javascript
     async getSelectedCellValue(){
 	    let cellValue;
         await Excel.run(async context => {
@@ -46,10 +46,11 @@ consider we are writing test case for the function which return the selected cel
         });
         return cellValue;
     }
-
+```
 
 spec.ts will be look like 
 
+```javascript
     it('getSelectedCellValue function should get the selected cell text', async(async () => {
             // tslint:disable-next-line: no-string-literal
             window['values'] = [['cellValue']];
@@ -57,7 +58,7 @@ spec.ts will be look like
     }));
 
 window['values']  is used to configure your test date which will be used by mock to return it.
-
+```
 
 ## List of Global variable :
 
