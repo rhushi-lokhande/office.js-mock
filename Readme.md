@@ -15,6 +15,12 @@ also add mime type as follows
 
     mime: {'text/x-typescript': ['ts']},
 
+Add typing in tsconfig.spec.json in types property
+
+    "office-js-preview"
+
+
+
 ## Usage
 
 In this package all the function available over office.js is define to support the unit testing as follows 
